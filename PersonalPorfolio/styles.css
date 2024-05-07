@@ -1,0 +1,82 @@
+:root {
+    --neutral: #16161a;
+    --base-100: #fffffe;
+    --neutral-focus: #010101;
+    --accent: #7f5af0;
+    --font-main: poppins;
+    --font-tight: oswald;
+    --font-serif: merriweather;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    text-align: center;
+    background-color: var(--neutral);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-main);
+}
+
+h1 {
+    font-size: 60px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--neutral);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--neutral-focus);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--base-100);
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links a:hover {
+    font-weight: bold;
+}
+
+section {
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+#welcome-section {
+    background-color: var(--neutral);
+    color: var(--base-100);
+    display: flex;
+    flex-direction: column;
+
+}
+
+#welcome-section h1 {
+    margin-top: 30vh;
+}
+
+#welcome-section p {
+    color: var(--accent);
+    font-size: 30px;
+    margin: 25px 0;
+    font-style: italic;
+}
+
