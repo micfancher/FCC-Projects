@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Snooping Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+     <h1 id="title">Totally Innocent Survey</h1>
+     <p id="description">Take this survey to help us gather your data...for research.</p>
+      <form id="survey-form" method="post">
+        <fieldset>
+          <label for="name" id="name-label">Full Name</label>
+            <input id="name" required type="text" placeholder="ex. Bartholomew Fiddlesticks"/>
+          <label for="email" name="email-label" id="email-label">Email</label>
+            <input id="email" required type="email" placeholder="ex. Bart@Fiddlesticks.io"/>
+          <label for="number" id="number-label">Net Worth (in millions)</label>
+            <input id="number" type="number" placeholder="ex. 118" min="1" max="118" />
+        </fieldset>
+        <fieldset>
+          <label for="money-location">Where Do You Keep Your Money?</label>
+            <select id="dropdown" name="money-location">
+              <option value="">(select one)</option>
+              <option value="1">In a Bank</option>
+              <option value="2">In a Safe</option>
+              <option value="3">Buried in my Yard</option>
+              <option value="4">Under my Mattress</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <p>Are you smart?</p>
+            <label for="smart-or-not"><input id="smart" type="radio" name="smart-or-not" class="inline" value="1"/>I am Smart</label>
+            <label for="smart-or-not"><input id="dumb" type="radio" name="smart-or-not" class="inline" value="2"/>I am not Smart</label>
+          </fieldset>
+          <fieldset>
+            <p>What do you use for Security Questions?</p>
+            <label for="mother-maiden-name">
+              <input type="checkbox" value="1" id="mother-maiden-name" class="inline"/>Mother's Maiden Name
+            </label>
+            <label for="child-birthday">
+              <input type="checkbox" value="2" id="child-birthday" class="inline"/>Child's Birthday
+            </label>
+            <label for="pet-name">
+              <input type="checkbox" value="3" id="pet-name" class="inline"/>Pet's Name
+            </label>
+            <label for="Anniversary">
+              <input type="checkbox" value="4" id="anniversary" class="inline"/>Anniversary
+            </label>
+            <label for="first-car">
+              <input type="checkbox" value="5" id="first-car" class="inline"/>Make, Model, and Year of First Car
+            </label>
+            <label for="answers" class="answers">Please provide answers to Security Questions:
+              <textarea id="answers" name="answers" rows="5" cols="30" placeholder="My mother's maiden name is..."></textarea>
+          </fieldset>
+          <input type="submit" value="Submit" id="submit" />
+      </form>
+  </body>
+</html>
